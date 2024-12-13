@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html
+  lang="es"
+  dir="ltr"
+  itemscope
+  itemtype="https://schema.org/WebPage"
+  prefix="og:http://ogp.me/ns#"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- LibDoc metadata -->
+    <title>Resultados de búsqueda</title>
+    <meta name="description" content="Resultados de" />
+    <meta itemprop="name" content="Resultados de búsqueda" />
+    <meta name="description" itemprop="description" content="Resultados de" />
+    <meta name="application-name" content="Resultados de búsqueda" />
+
+    <meta name="author" content="Azriel" />
+
+    <!-- Favicons -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/libdoc/img/favicon/favicon-32x32.png"
+    />
+
+    <meta name="msapplication-TileColor" content="#5bb4dd" />
+    <meta name="theme-color" content="#5bb4dd" />
+
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="msapplication-starturl" content="/assets/libdoc/search.html" />
+    <meta name="msapplication-tooltip" content="Resultados de búsqueda" />
+    <meta name="msapplication-TileColor" content="#5bb4dd" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/assets/libdoc/search.html" />
+    <meta property="og:title" content="Resultados de búsqueda" />
+    <meta property="og:description" content="Resultados de" />
+
+    <meta property="og:image" content="/assets/libdoc/img/libdoc.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Resultados de búsqueda" />
+    <meta name="twitter:description" content="Resultados de" />
+    <meta name="twitter:url" content="/assets/libdoc/search.html" />
+
+    <meta name="twitter:image" content="/assets/libdoc/img/libdoc.png" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Resultados de búsqueda" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5bb4dd" />
+
+    <!-- Android -->
+    <meta name="theme-color" content="#5bb4dd" />
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="/assets/libdoc/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/libdoc/fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="/assets/libdoc/css/libdoc.css" />
+
+    <!-- Prism syntax highlighter -->
+
+    <link rel="stylesheet" href="/assets/libdoc/css/prism/prism-tomorrow.css" />
+
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        font-size: 0.9em;
+        line-height: 1.4em;
+        font-family: var(--sg-font-family-monospace);
+      }
+    </style>
+
+    <!-- Head scripts -->
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/jquery-3.5.1.slim.min.js"
+    ></script>
+
+    <!-- LibDoc config -->
+    <script>
+      window.site = {
+        title: "TyranoBuilder en Español",
+        description: "Guías, tutoriales y parche al español de TyranoBuilder.",
+        url: "",
+        baseurl: "",
+        playground: {
+          min_height: "300px",
+          stylesheets: [],
+          scripts_head: [],
+          scripts_body: [],
+        },
+      };
+    </script>
+  </head>
+
+  <body class="u-bc-primary-edge">
+    <div class="c-grid m-nowrap">
+      <div
+        class="c-position m-fixed m-top-left u-bc-primary-edge u-w-100 u-h-100 u-translucid u-z-100 m-anchor-top-right"
+        u-none="xl"
+        id="libdoc-sidebar-overlay"
+        onclick="sidebar();"
+      ></div>
+      <nav
+        class="c-position m-top-left u-z-100 u-h-100vh u-bc-primary-max u-bb-thin-dashed-alt m-anchor-top-right--sm m-anchor-top-right--md"
+        m-fw-medium="md,xl"
+        u-fixed="sm,md"
+        u-sticky="xl"
+        id="libdoc-sidebar"
+      >
+        <div
+          class="c-position m-absolute m-top-0 m-right-0 u-h-100 u-bl-thin-dashed-alt"
+          style="width: 1px"
+        ></div>
+        <button
+          class="c-btn c-position m-absolute m-top-right m-anchor-top-left u-z-12 u-p-sm"
+          u-none="xl"
+          onclick="sidebar()"
+        >
+          <span class="i-menu u-fs-md"></span>
+        </button>
+        <ul
+          id="libdoc-sidebar-menu"
+          class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl"
+        >
+          <li>
+            <a
+              rel="author"
+              href=""
+              class="c-btn m-translucid m-block-right u-p-md"
+            >
+              <img
+                src="/assets/libdoc/img/favicon/builder_logo.png"
+                style="max-height: 40px"
+                alt="TyranoBuilder en Español"
+              />
+            </a>
+          </li>
+
+          <li id="libdoc-sidebar-item-search">
+            <form
+              class="c-form"
+              action="/assets/libdoc/search.html"
+              method="get"
+            >
+              <input
+                type="search"
+                id="libdoc-search-box"
+                name="query"
+                class="u-bl-none u-bt-thin-dashed-alt u-br-large-solid u-bb-none u-bg-search"
+                u-fs-xs="sm,md"
+                u-p-xs="sm,md"
+              />
+              <label for="libdoc-search-box" u-fs-xs="sm">Buscar</label>
+              <input type="submit" value="Search" class="u-none" />
+            </form>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Tutorial introductorio
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/starting.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Preparativos iniciales
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/scenario.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Creación de escenarios
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/character.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Creación de personajes
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/background.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Cambio de escena (fondo)
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/branching.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Ramificación del juego
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/playback.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Reproducción BGM
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/new_scenario.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Nuevo escenario
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/title_screen.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Pantalla de título
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/release.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Lanzamiento del juego
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Desarrollo
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/changelog.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Desarrollo"
+            >
+              <span class="i-clock u-mr-xxs"></span> Registro de cambios
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Descargas
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://mega.nz/folder/d5IlXLoZ#2fuuOACHoG1-I2xEIoxyLg"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Descargas"
+            >
+              <span class="i-download u-mr-xxs"></span> TB v2.04b Parche ES
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/files.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Descargas"
+            >
+              <span class="i-file u-mr-xxs"></span> Directorio de archivos
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Fuentes oficiales
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://b.tyrano.jp/"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Fuentes oficiales"
+            >
+              TyranoBuilder JA
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://tyrano.jp/"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Fuentes oficiales"
+            >
+              TyranoScript JA
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="m-grow m-w-1 c-grid m-nowrap m-center">
+        <div
+          class="m-grow m-w-1 u-mw-main u-bc-primary-max u-b-thin-dashed-alt"
+        >
+          <header class="u-bb-thin-dashed-alt u-p-lg" u-p-sm="sm">
+            <h1 id="libdoc-page-title" class="u-mt-none u-mb-xs">
+              Resultados de búsqueda
+            </h1>
+            <p class="u-fs-lg u-m-none u-lh-base" u-fs-md="sm">
+              Resultados de
+              <a
+                href="/assets/libdoc/search.html?query="
+                class="link libdoc-search-query"
+                >query</a
+              >
+            </p>
+          </header>
+          <div id="libdoc-content" class="u-p-lg u-p-sm--sm">
+            <ul id="libdoc-search-results" class="u-p-none u-ls-none"></ul>
+            <script>
+              window.store = {
+                "pages-background-html": {
+                  title: "Cambio de escena (fondo)",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "  Cambiar la imagen de fondo  Dirección del cambio del fondo.Cambiar la imagen de fondoEn los juegos  de novelas, el papel del fondo es muy importante. Para transmitir claramente la situación del juego, crea una imagen de fondo adecuada.Así que, en la escena anterior, Yuko entró en el aula con prisa, así que entonces. Hagamos una escena en la que se traslada al pasillo porque no puede hablar en el aula.Las imágenes que se añadirán esta vez será la siguiente. Debería ya estar en su proyecto de manera predeterminada cómo: rouka.jpgAhora, añada el componente «Texto» arrastrándolo y soltándolo desde el área de izquierda como antes.El texto debería tener este aspecto:No está bien aquí, así que vamos al pasillo.#Está bien, está bien, está bien.A continuación, añada el componente «Cambiar fondo» de la zona izquierda.A continuación, seleccione el archivo en los parámetros → añadir la imagen del pasillo con doble clic para seleccionar.Ahora guarda y previsualiza. Si el fondo se cambia, usted ha tenido éxito.Dirección del cambio del fondo.Dependiendo de la escena, el fondo puede cambiar más rápido o más lento para crear un efecto efectivo.Prueba a cambiar el tiempo en el área de parámetros. (Por defecto, cambia a los 3000 milisegundos (3 segundos)).Además, hay disponibles muchas direcciones de transición diferentes.Cambia la dirección en el área de parámetros y vuelve a previsualizarla.Esto completa la explicación de cómo cambiar escenas.No sólo puede cambiar la escena, sino que también puede utilizarla para escenas de eventos quitando todos los personajes y mostrando sólo el fondo.Siguiente: »» Ramificación del juego con opciones",
+                  url: "/pages/background.html",
+                },
+
+                "pages-branching-html": {
+                  title: "Ramificación del juego",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "  Insertar un botón de rutas  ImportanteInsertar un botón de rutasUn elemento importante en los juegos de novela es que la historia diverge en función de las elecciones que hagas. Con TyranoBuilder, puedes añadir fácilmente este tipo de elecciones.Ahora inserta el siguiente texto para continuar donde lo dejaste…#Yuko¡Escuché que un meteorito cayó en la montaña detrás de nosotros!¡Eh, vamos a verlo ahora mismo!#Eh. De ninguna manera.#Yuko¡Es verdad! ¡Lo vi anoche, brillando y cayendo por la colina detrás de nosotros!¡Eh, vamos a verlo juntos ahora!Esto: «¡Eh, vamos a verlo juntos ahora!». Quiero hacer una elección de respuestas a las siguientes preguntas.Inserte el Botón de rutas del área de izquierda.Esta será una de las opciones de ramificación. Una vez insertado, introduzca los parámetros de la siguiente manera:Y necesitamos otro botón, pero esta vez en lugar de arrastrarlo y soltarlo desde el área izquierda, vamos a copiar el botón de ruta que insertamos antes.Haz clic derecho en el «botón de ruta» en el área del escenarioAparecerá un menú emergente. Seleccione Copiar y después Pegar.¡Exactamente el mismo botón de ruta se ha copiado detrás de usted!El componente copiado se utilizara como la otra opción, por lo que eltexto en el área de parámetros debe ser «No tengo ganas de ir contigo».Cambia su posición vertical x a 300 y deja el color en black.Guarda y previsualiza.ImportanteSiempre debes dejar un componente de parada después de colocar un botón de rutas.De lo contrario, el juego avanzará sin detenerse en una opción.Ahora verá un botón con las opciones «De acuerdo vamos juntos» y «No tengo ganas de ir contigo».Sin embargo, no ocurre nada cuando pulsas el botón tal y como está ahora.Tienes que establecer a dónde te llevará el botón cuando lo pulses.El destino se llama «Etiqueta». Es como un punto de referencia, por así decirlo.Inserte tres ‘Etiquetas’ desde el área izquierda.Una se utiliza cuando se selecciona ‘Ir a’ o ‘No ir a’, y la otra se utiliza para volver a la ruta común después de ramificarse.Aquí las llamaremos ‘sí’, ‘no’ y ‘común’, respectivamente.El área del escenario después de la adición tiene este aspecto…Ahora vamos a asegurarnos de que cuando se pulse el botón de ruta, ¡nos movemos a la posición de la etiqueta! En el área del escenario, seleccione la etiqueta «*Sí» que acaba de añadir como objetivo en el área de parámetros de la opción «De acuerdo vamos juntos».Esto completa el proceso de mover la historia a la etiqueta ‘Sí’ cuando se pulsa el botón ‘De acuerdo vamos juntos’.Del mismo modo, cuando se pulsa el botón «No tengo ganas de ir contigo», la historia se mueve a la etiqueta «No».A continuación, puede colocar los escenarios para cuando se seleccione cada opción.Asegúrese de que el escenario tenga el siguiente aspectoEscenario si se selecciona «De acuerdo vamos juntos».#YukoOooh. ¡Gracias!Sabía que dirías eso.Escenarios en el que se selecciona «No tengo ganas de ir contigo».#Yuko.Eeeeeee.Entonces no te dejaré ver mis deberes nunca más.#Gunnu. Está bien, está bien. Ya voy.Sin embargo, hay un problema.Después de seleccionar la opción «De acuerdo vamos juntos», aparece también el texto de la opción «No tengo ganas de ir contigo». Esto ocurre porque el escenario avanza de arriba abajo, ¿no?Para evitarlo, resulta útil la etiqueta preparada «Común».Inserte Saltar desde el área izquierda.Este componente permite desplazarse a una etiqueta especificada.Con esto concluye la descripción de las opciones.Si lo desea, puede diseñar sus propios botones de elección con una funcionalidad similar.En este caso, pruebe a utilizar un componente llamado «Botón de imagen».En TyranoBuilder también es posible aumentar o disminuir los parámetros en función de las elecciones.Esta área se puede crear fácilmente comprobando el gestor de variables de TyranoScript.Siguiente: »» Reproduce música y efectos de sonido",
+                  url: "/pages/branching.html",
+                },
+
+                "pages-character-html": {
+                  title: "Creación de personajes",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "  Añadir un personaje  Aparición del personaje  Cambia la expresión facial del personaje.  Puntos a tener en cuentaEn este capítulo, por fin introducimos los personajes en el juego. Esta vez aparecerá la siguiente imagen. Yuko.Añadir un personajePara que un personaje aparezca en la pantalla del juego, primero debes registrarlo.Haz clic en el botón de Personajes en la esquina superior derecha.Se ha abierto la ventana de personajes.Vamos a registrar a Yuko, que aparecerá en este número.Introduce «Yuko» y el nombre del personaje en el cuadro de texto y pulsa el botón «Añadir».Esta vez, hemos preparado las imágenes de expresión con antelación, así que descárgalas y descomprímelas.  Puedes descargar archivo que contiene a Yuko, buscando «yuko.zip» en el directorio de archivos (ubicado en la barra lateral izquierda) o descargarlo al final de esta página.A continuación, registra las imágenes de expresión de Yuko.Si las imágenes están registradas, has tenido éxito. El personaje “Yuko” está ahora vinculado a los archivos de imagen.Si registras de este modo las distintas expresiones faciales de un personaje, podrás pasar fácilmente de una a otra.Aparición del personajeAhora vamos a hacer que «Yuko» que acabas de registrar aparezca en el juego. Arrastra y suelta el componente «Unirse a la escena» desde el área izquierda e insértalo después del texto que añadimos la última vez.Una vez añadido, mira el campo de personajes en el área de parámetros.Si Yuko está seleccionado, ya está.Guarda y mira la vista previa. Y así al final tienes un personaje.Cambia la expresión facial del personaje.Es más fácil meterse en la historia si las expresiones faciales cambian con la conversación.En Tyrano Builder puedes cambiar fácilmente las expresiones faciales.Añada texto después de «Unirse a la escena» que acabas de añadir y añada el siguiente contenido.¿Qué pasa, Yuko? ¿Qué pasa?#Yuko¡No es cuestión de “qué pasa”! ¡Tengo problemas!Y él dijo: «¿Qué pasa, Yuko? ¿Qué pasa?», ya que queremos que Yuko cambie su expresión facial tras la frase «¡Tengo problemas!».Arrastra y suelta «Cambiar la expresión» en el área izquierda.Debería tener el siguiente aspecto.A continuación, después de hacer clic en Cambiar la expresión en el área del escenario,Haga clic en Navegar en el área de parámetros.Puede seleccionar las expresiones que haya registrado en personajes, así que seleccione la imagen que desea cambiar haciendo doble clic sobre ella.Guarde y previsualice la imagen. Si la expresión cambia al final, has tenido éxito.Puntos a tener en cuentaAdemás, si desea añadir más de un personaje a la pantalla, puede hacer lo mismo con «Unirse a la escena» para que aparezcan en pantalla tantos personajes como desee.La posición de pie y otros parámetros se calculan automáticamente.Sin embargo, si se especifica una posición horizontal en los parámetros, esa posición tendrá prioridad.A continuación, prueba a cambiar la escena (el fondo).Siguiente: »» Cambiar la escena (el fondo)",
+                  url: "/pages/character.html",
+                },
+
+                "": {
+                  title: "index.md",
+                  author: "",
+                  category: "",
+                  content:
+                    "IntroducciónBien daré una explicación breve, este es el sitio web oficial de mi proyecto, para llevar el motor de novelas TyranoBuilder al español.Según leí por Steam, antes había un sitio web con los tutoriales y guías en inglés y que con unas movidas lo perdieron, así que los enlaces están caídos y después de tanto tiempo no hicieron nada.Y nadie que esté leyendo esto y quiera hacer su juego, sabe japonés, así que me encargaré de traerlo esté idioma.Si lo que quieres es descargar el parche, puedes hacerlo desde aquí mismo.Acerca del motorEste es un constructor de novelas visuales y sonoras que utiliza como base el motor de código abierto TyranoScript, el cual permite utilizar JavaScript y Kirikiri.Como su enfoque principal es hacer juegos de navegador, permite que puedas exportar tu juego a todas las plataformas de forma sencilla.Debido a la forma en la que se construyen las novelas es algo sencilla, este motor se basa en componentes que se pueden arrastrar y soltar en forma de secuencia para contar tus historias algo carácteristico en Kirikiri.Aunque también puedes programar algunos componentes con JavaScript y Kirikiri, incluso puedes añadir Plugins (¡Sorpresa, están todos en Japonés!) si tienes la versión de pago puedes incluir los DLC que venden en Steam.",
+                  url: "/",
+                },
+
+                "pages-new-scenario-html": {
+                  title: "Nuevo escenario",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "  Crear un nuevo archivo de escenario  Puntos a tener en cuenta  ImportanteCrear un nuevo archivo de escenarioEn este punto, el archivo de escenario se está haciendo un poco largo ¿No crees?TyranoBuilder le permite pasar a otro archivo de escenario al finalizar una parte de su historia.Ahora vamos a crear rápidamente un archivo de escenario.Haz clic en la pestaña Escenas del área izquierda.Haz clic en el botón «Nueva escena». En el siguiente escenario, la historia tendrá lugar en el bosque, así que nombra el archivo ‘bosque’.Si has creado con éxito un nuevo escenario, habrás pasado a un escenario nuevo.Vaya a la pestaña de escenario y asegúrese de que ‘bosque’ está seleccionado.Ahora vamos a crear la escena del bosque.Añade texto para revisar lo que se ha hecho hasta ahora. Cambia el fondo. Utiliza las apariencias de los personajes para crear una escena de bosque a tu antojo.A continuación también se incluyen capturas de muestra para que sirvan de referencia.Por último, tienes que saltar desde el final del último archivo de escenario que estabas editando al nuevo archivo de escenario.Vuelve de nuevo a scene1. Haz doble clic en scene1 en la pestaña de Escenas.Añade un breve escenario y salta al final de la scene1.Para hacer el salto, esta vez en ubicación, seleccione el archivo de escena «bosque.ks» y en objetivo la etiqueta «*Inicio».Esto significaría un salto a la etiqueta «*Inicio» en el archivo de escenario «bosque.ks».Guarde y previsualice el archivo. Si puedes pasar a la escena del bosque, lo has conseguido.¿Cómo ha ido? Llegados a este punto, has aprendido la mayoría de los elementos necesarios para un juego de novela.La próxima vez, aprenderás a crear una pantalla de título, y entonces será el momento de publicar tu juego.Puntos a tener en cuentaCuando creas un nuevo archivo de escenario, puede ser agotador crear un escenario desde cero.Así que haz uso de copiar y pegar.Recuerda que es el que aparece cuando haces clic con derecho en el área del escenario.Puedes copiar y pegar en en todos los archivos de escenario o directamente hacer clic derecho en un escenario y duplicarlo.ImportanteEs muy importante dividir el juego en varios archivos de escenario de tamaño adecuado.El juego creado cargará los archivos de imagen y los escenarios cuando se muevan los archivos de escenario, peroSi el tamaño del archivo de escenario es demasiado grande, puede tardar mucho en cargarse,el juego puede volverse lento.Sea proactivo al dividir los archivos de escenario donde pueda crear un intervalo adecuado en el juego.Siguiente: »» Editar pantalla de título",
+                  url: "/pages/new_scenario.html",
+                },
+
+                "pages-playback-html": {
+                  title: "Reproducción BGM",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "  Reproduce música y efectos de sonidoReproduce música y efectos de sonidoReproducir música y efectos de sonido que se adapten a la escena del juego es un elemento muy importante para animar el juego.TyranoBuilder facilita la reproducción de música y efectos de sonido, así que echemos un vistazo.En primer lugar, reproduzcamos música de fondo. Primero, prepara el archivo de música que se va a reproducir. Como se trata de una escena cotidiana, la música tranquila es una buena elección.Esta vez, hemos tomado prestado material gratuito del siguiente sitio web: BGM Gratis DOVA-SYNDROME.En esta ocasión, los archivos que se añadirán serán los siguientes. Descárgalas en tu escritorio u otra ubicación.Selecciona y descarga la BGM que más te guste. Por ahora, he seleccionado el siguiente BGM porque parecía encajar con la atmósfera.Puedes usar música en formato ‘.ogg’, ‘.mp3’ y ‘.m4a’ etc. De todos modos, por defecto se incluye en el proyecto un archivo music.m4a que puedes usar.En cuanto a cuándo reproducir la BGM, esta vez vamos a hacer que se reproduzca cuando aparezca Yuko.Añade el componente Reproducir música desde el área izquierda arrastrando y soltando.El siguiente paso es reproducir la música, que es lo mismo que cuando se añaden imágenes.Haz doble clic en el archivo de música por defecto o arrastra y suéltalo aquí.Guarda y previsualiza.Si la música suena cuando aparece Yuko, lo has conseguido.Así de fácil.Insertar efectos de sonido es exactamente el mismo procedimiento, excepto que debes utilizar el componente «Reproducir efectos de sonido». El procedimiento es exactamente el mismo.Siguiente: »» Crear un nuevo archivo de escenario",
+                  url: "/pages/playback.html",
+                },
+
+                "pages-release-html": {
+                  title: "Lanzamiento del juego",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "  Asegúrese de que no hay defectos  Importante  Determinar el método de publicación  Mensaje finalHa llegado el momento de que todo el mundo juegue a tu juego terminado.Comprendo tu impaciencia por dar a conocer el juego al público lo antes posible, pero prepárate con cuidado.Asegúrese de que no hay defectosSi publicas tu juego en un estado incompleto, causará problemas a la gente que lo juegue.Comprueba atentamente que el juego no se detenga a la mitad o se comporte de forma extraña.Como mínimo, asegúrate de que juegas todas las rutas de principio a fin.ImportanteAl distribuir juegos de navegador o para móviles hay que procurar que los archivos de imagen y música no sean demasiado grandes.Si crecen demasiado, sobre todo en los móviles, el juego puede bloquearse a la mitad o tardar demasiado en cargarse, lo que hace imposible ofrecer un juego cómodo.Las imágenes y otros medios deben comprimirse para reducir el tamaño del archivo.Determinar el método de publicaciónLos juegos creados con TyranoBuilder pueden distribuirse de muy diversas formas.Decida en cuál de los siguientes formatos desea publicar su juego…Por supuesto, puede elegir más de un método de publicación.[Métodos típicos]  Como juego de navegador, para jugar a través de Internet.  Distribuir como aplicación para Windows.  Distribuir como aplicación para macOS.  Publicar en la AppStore como aplicación para iOS.  Publicar en Google Play como aplicación para Android.Veamos más de cerca las ventajas y los inconvenientes.  Formato de juego de navegador:Ventajas   Puede estar disponible en todo el mundo a través de Internet.  No requiere instalación. Se puede jugar simplemente accediendo con un navegador.  Puede pegarlo en su propio sitio web, por ejemplo.Desventajas   El acceso al servidor lleva tiempo.  No se puede jugar sin acceso a Internet.Método de publicación En la pantalla de edición del juego que quieres lanzar, selecciona [Proyecto] &gt; [Exportar el juego] en la barra de menú. Se abrirá la ventana Exportar el juego para su distribución, donde podrás seleccionar ‘Juego de navegador’.Asegúrese de que el juego se crea en la carpeta de exportación de la ubicación donde instaló TyranoBuilder.Esto es todo lo que necesita hacer y estará listo para publicar el juego en su navegador.  Formato de aplicación Windows:  Formato de aplicación macOS:  Formato de aplicación Linux:Ventajas   Los juegos se ejecutan a una velocidad constante.  Se puede jugar sin conexión a Internet.Desventajas   El usuario debe descargar el archivo.Método de publicación En la pantalla de edición del juego que quieres lanzar, selecciona [Proyecto] &gt; [Exportar el juego] en la barra de menú. Se abrirá la ventana Exportar el juego para su distribución, donde podrás seleccionar ‘Windows’, ‘Mac’ o ‘Linux’ .Asegúrese de que el juego se crea en la carpeta de exportación de la ubicación donde instaló TyranoBuilder.Esto es todo lo que necesita hacer y estará listo para publicar el juego en su navegador.  Publicar como aplicación iOS:Ventajas   Los juegos se ejecutan a una velocidad constante.  Puede venderse mediante pago a través de la AppStore.  Si consigues llamar la atención, tendrás la oportunidad de que juegue más gente.Desventajas   El material que no cumpla los criterios de selección de la AppStore no podrá publicarse (por ejemplo, expresiones violentas).Método de publicación En la pantalla de edición del juego que quieres lanzar, selecciona [Proyecto] &gt; [Exportar el juego] en la barra de menú. Se abrirá la ventana Exportar el juego para su distribución, donde podrás seleccionar ‘Aplicación de iOS’.Asegúrese de que el juego se crea en la carpeta de exportación de la ubicación donde instaló TyranoBuilder.Esto es todo lo que necesita hacer y estará listo para publicar el juego en su navegador.Aplicación con TyranoPlayer (versión iOS)  Publicar como aplicación Android:Ventajas   Los juegos se ejecutan a una velocidad constante.  Puede venderse mediante pago a través de Google Play.  Si consigues llamar la atención, tendrás la oportunidad de que juegue más gente.Desventajas   Debido a la diversidad de modelos en Android, es posible que algunos modelos no lo puedan ejecutar.Método de publicación En la pantalla de edición del juego que quieres lanzar, selecciona [Proyecto] &gt; [Exportar el juego] en la barra de menú. Se abrirá la ventana Exportar el juego para su distribución, donde podrás seleccionar ‘Aplicación de Android’.Asegúrese de que el juego se crea en la carpeta de exportación de la ubicación donde instaló TyranoBuilder.Esto es todo lo que necesita hacer y estará listo para publicar el juego en su navegador.Aplicación con TyranoPlayer (versión Android)Mensaje finalGracias por su tiempo.Esto completa el tutorial de TyrannoBuilder.Pero… Todavía estamos utilizando sólo alrededor del 5% de las capacidades de TyranoBuilder.Para aprovechar al máximo las capacidades de TyranoBuilder, también debería probar los tutoriales de TyranoScript.Podrá crear juegos más elaborados, como gestión de variables, animación y juegos de escape, así que ¡pruébelo!Consulte también esta página sobre características útiles que debe conocer.",
+                  url: "/pages/release.html",
+                },
+
+                "pages-scenario-html": {
+                  title: "Creación de escenarios",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "  Descripción de la pantalla  Vista previa del juego  Editar y añadir escenarios  Una observación (sobre los atajos del teclado)  Cambiar el orden de los componentes  Significado del “#”Descripción de la pantallaAhora, antes de pasar a la creación del juego, echemos un vistazo rápido a la pantalla de creación.Como se muestra arriba, consta de cuatro áreas principales.Las áreas servirán de base para futuras explicaciones, así que acuérdate de sus nombres.      El área de la izquierda de la pantalla en (1) se denomina Área Izquierda tal cual.En esta área se concentran funciones importantes como añadir texto y movimiento al juego.En el desarrollo real, el área izquierda se utiliza a menudo como punto de partida para las operaciones, por lo que si se le pide que encuentre el ◯ en el área izquierda, por favor, búsquelo aquí.        El área situada en el centro de la pantalla en (2) se denomina Área del Escenario.Esta área representa el flujo de la progresión del juego, que se ejecuta en orden de arriba abajo.        El área situada a la derecha de la pantalla en (3) se denomina Área de Parámetros.En esta zona es donde se realizan los ajustes detallados de los componentes que dan movimiento al juego seleccionado en el área de escenario (en el centro de la pantalla).En otras palabras, usted hace sus selecciones en el área de escenario y decide los detalles del movimiento en el área de parámetros.        El área (4) de la esquina superior derecha de la pantalla se llama arriba a la derecha.En esta zona puedes configurar los ajustes generales del juego, guardar y previsualizar la partida. Esta zona está densamente poblada de funciones muy importantes como…  Estas tres áreas (1) Área Izquierda, (2) Área del Escenario, (3) Área de Parámetros se utilizan para crear el juego.Naturalmente las entenderás cuando las toques, así que vamos a recordar aquí los nombres de las áreas.Vista previa del juegoSi acabas de crear un proyecto de juego, ya se ha creado una muestra sencilla.Vamos a previsualizar el juego lo antes posible.En arriba a la derecha, haga clic en el botón de Vista previa.La ventana está abierta y el juego ha comenzado, ¿verdad? Mientras trabajes en tu juego, utilizas esta función de vista previa para comprobar el funcionamiento real del juego.Editar y añadir escenariosA continuación, vamos a cambiar el escenario real.Primero, borremos el texto ya existente en el área del Escenario.Hagamos clic en el botón Cerrar de la esquina superior derecha de Texto.Ahora su texto ha desaparecido. A continuación, arrastre y suelte el componente de Texto del área izquierda al área del escenario.Como novedad, se ha añadido un texto al área del escenario. Aquí es donde describirá su historia.Por favor, introduzca el siguiente texto en la caja de texto:Ese día jueves a la hora del almuerzo.Había terminado de comer y tenía bastante sueño.Huh, que sueño. . . .Mejor voy a dormir.Me dejé caer en mi escritorio y estaba a punto de caer en un sueño profundo...#?¡Oh, Dios mío! ¡Oh, Dios mío!#¡Aaah!Antes de previsualizar, necesitas guardar tus ediciones. Haga clic en el botón Guardar en la esquina superior derecha.Una vez hayas guardado puedes dar clic aquí, para previsualizar la escena especifica que estás editando.Como puedes ver en la vista previa, de esta forma vas construyendo tu historia. ¿Muy fácil no?Una observación (sobre los atajos del teclado)  Guardar: Ctrl + s (En Mac: Comando + s)  Vista previa: Ctrl + p (En Mac: Comando + p)  Deshacer: Ctrl + z (En Mac: Comando + z)También puedes hacer clic derecho en los componentes, para copiarlos y pegarlos en el área del escenario, o depurarlos y previsualizarlos desde componentes específicos.Cambiar el orden de los componentesPor último, merece la pena explicar cómo reorganizar el orden de las áreas del escenario. No es tanto una explicación, pero puedes mover los componentes de un área de escenario hacia arriba o hacia abajo arrastrándolos y soltándolos.Significado del “#”Si has llegado hasta aquí, te habrás dado cuenta del significado del # (sostenido) en el escenario. Este puede expresar quién habla en la historia. Si no quieres que aparezca nada, escribe solo # y no aparecerá. En la próxima página, intentaremos hacer aparecer un carácter en la pantalla.Siguiente: »» Dar vida a los personajes",
+                  url: "/pages/scenario.html",
+                },
+
+                "pages-starting-html": {
+                  title: "Preparativos iniciales",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "* Barra lateral{:toc}## Bienvenido a TyrannoBuilderAquí explicaremos cómo crear un juego en un formato de tutorial fácil de entender. Simplemente siguiendo los pasos, podrás crear un juego bastante completo, así que quédate con nosotros hasta el final.## Preparativos iniciales- En primer lugar, descargue el motor en el apartado de `descargas` en la barra lateral izquierda.- Descomprima el archivo en una ubicación adecuada y dentro de su carpeta haga doble clic en tyranobuilder.exe *(o tyranobuilder.app para Mac)* para ejecutarlo.- Si ve una pantalla como la siguiente, está listo para utilizar TyranoBuilder. Es muy fácil de usar.![sample](/assets/resources/images/starting-0.png)## Creación del proyecto para tu juegoA continuación, crea un nuevo proyecto de juego.Haz clic en el botón `“Nuevo proyecto”` en la pantalla que acabas de abrir.![project creation](/assets/resources/images/starting-1.png)Introduzca primero el nombre del proyecto en caracteres alfanuméricos, en mayúscula o minúscula sin espacios *(puedes usar _ como separador)*. En este caso, procederemos con el nombre `mi_juego`. Una vez introducido el nombre, pulsa `Siguiente`.![project name](/assets/resources/images/starting-2.png)A continuación, seleccione el tipo de juego. TyranoBuilder te permite crear diferentes tipos de juegos. En este caso, ¡selecciona el formato `Novela Visual`!![project type](/assets/resources/images/starting-3.png)En la pantalla `Tamaño de la pantalla`, seleccione **Paisaje(960 x 480)** para este tutorial.Si seleccionas «1280 x 720» o «960 x 480», puede hacerse universalmente para PC y móviles.Selecciona «Retrato(640 x 960)», si quieres crear un juego para móviles que se maneje sujetándolo en vertical.![project resolution](/assets/resources/images/starting-4.png)Por último, se te pedirá que confirmes la configuración del juego, pero puedes dejarla sin marcar. Haz clic en el botón `«Crear un nuevo proyecto»`.![project configuration](/assets/resources/images/starting-5.png)Si se ha creado el proyecto de juego y se muestra la pantalla de creación del juego, ha tenido éxito. Ahora, a partir de la próxima página, empezaremos a trabajar en el juego en serio.[Siguiente: »» Ir al creador de escenarios](/pages/scenario.html)",
+                  url: "/pages/starting.html",
+                },
+
+                "pages-title-screen-html": {
+                  title: "Pantalla de título",
+                  author: "",
+                  category: "Tutorial introductorio",
+                  content:
+                    "* Barra lateral{:toc}## Crea una pantalla de títuloLa pantalla de título es como la cara del juego, así que hay que tenerla muy en cuenta.TyranoBuilder te permite personalizar la pantalla de título a tu gusto.Hasta ahora, hemos estado utilizando la pantalla de título por defecto.Ahora, vamos a editar la pantalla de título.Abre la pestaña de escenarios en la área izquierda y haz doble clic en «title_screen» para cargarlo.![title_screen](/assets/resources/images/title_screen-0.png)Mira el archivo de escenario en el título. No es diferente de los archivos de escenario anteriores.También puedes leer el significado del archivo de escenario.Sí. La pantalla de título dice que este archivo de escenario se cargará primero cuando se inicie el juego, pero el proceso de creación no difiere de los archivos de escenario anteriores.De este modo, conseguirás un alto nivel de presentación y una pantalla de título muy flexible.Hasta este punto, si ya has avanzado en el tutorial, ya puedes cambiar la pantalla de título a tu gusto.Puedes cambiar los botones ‘Nuevo juego’ y ‘Cargar Juego’, cambiar la imagen de fondo y editarla a tu gusto.## Uso de botón de imagenLos botones que aparecen en la pantalla de título son un poco, bueno, sencillos.Si quieres personalizarlos un poco más, prueba a utilizar el «Botón de imagen».Arrastre y suelte el «Botón de imagen» del área izquierda para añadirlo.La funcionalidad es la misma que el «Botón de rutas» que hemos utilizado hasta ahora, pero puede aplicar la imagen que desee.En este caso, nos gustaría utilizar el siguiente bóton en blanco puede editarlo como quiera para ponerle ‘Nuevo juego’ o ‘Cargar Juego’.![title_screen](/assets/resources/images/button_title.png)![title_screen](/assets/resources/images/title_screen-1.png)¿Cómo era?Por supuesto, también puedes poner música en el título, o mostrar una advertencia o un logotipo antes de que empiece el juego.Ahora, en la próxima página, vamos a prepararnos por fin para lanzar tu juego. [Siguiente: »» ¡Juego finalizado! Listos para su publicación](/pages/release.html)",
+                  url: "/pages/title_screen.html",
+                },
+              };
+            </script>
+            <script
+              type="text/javascript"
+              src="/assets/libdoc/js/lunr.min.js"
+            ></script>
+            <script
+              type="text/javascript"
+              src="/assets/libdoc/js/search.js"
+            ></script>
+          </div>
+        </div>
+        <div
+          id="libdoc-toc-container"
+          class="m-fw-mini c-position m-top-right m-anchor-top-left u-bc-primary-edge u-z-10"
+          u-fixed="sm"
+          u-none="sm"
+        ></div>
+      </main>
+    </div>
+    <footer class="u-p-lg u-fs-sm u-c-primary-alt u-mt-md">
+      <nav class="c-grid m-space-between m-bottom">
+        <ul class="u-ls-none u-mb-md--sm">
+          <li>
+            <a href="" class="c-btn m-translucid u-pl-none"
+              >TyranoBuilder en Español</a
+            ><br />
+            Guías, tutoriales y parche al español de TyranoBuilder. © Azriel
+          </li>
+        </ul>
+
+        <ul class="u-ls-none">
+          <li class="u-fs-xxs">
+            Traducción y sitio web mantenido por:
+            <a
+              href="https://github.com/ChrisTVH"
+              class="u-c-primary-alt"
+              target="_blank"
+              >Azriel</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-core.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-markup.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-css.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-clike.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-javascript.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-markdown.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-scss.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-yaml.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/my-toggles.js"
+    ></script>
+    <script type="text/javascript" src="/assets/libdoc/js/template.js"></script>
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/playground.js"
+    ></script>
+
+    <aside
+      my-toggle-name="libdoc-modal"
+      class="c-position m-fixed m-top-left u-w-100 u-h-100 u-z-100"
+    >
+      <div
+        class="c-grid m-center m-middle m-position m-fixed m-top-left u-w-100 u-h-100"
+      >
+        <div
+          class="c-position m-fixed m-top-left u-w-100 u-h-100 u-cur-pointer u-bc-primary-alt u-faded"
+          my-toggle="libdoc-modal"
+        ></div>
+        <div
+          class="u-bc-primary-max u-brad-md u-relative u-b-thin-dashed-alt u-mh-100vh u-o-auto"
+        >
+          <header class="c-grid m-nowrap m-middle u-bb-thin-dashed-alt">
+            <h4 id="libdoc-modal-title" class="m-grow u-pl-sm">
+              Playground settings
+            </h4>
+            <nav>
+              <button
+                class="c-btn u-p-sm u-bl-thin-dashed-alt"
+                my-toggle="libdoc-modal"
+              >
+                Close <span class="i-x u-ml-xs"></span>
+              </button>
+            </nav>
+          </header>
+          <div
+            id="libdoc-modal-content"
+            class="u-p-lg"
+            u-pl-md="sm"
+            u-pr-md="sm"
+          >
+            content
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

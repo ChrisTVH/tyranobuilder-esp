@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html
+  lang="es"
+  dir="ltr"
+  itemscope
+  itemtype="https://schema.org/WebPage"
+  prefix="og:http://ogp.me/ns#"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- LibDoc metadata -->
+    <title>Archivos</title>
+    <meta
+      name="description"
+      content="Todos los archivos que se usan en el tutorial se encuentran aquí, entre otros."
+    />
+    <meta itemprop="name" content="Archivos" />
+    <meta
+      name="description"
+      itemprop="description"
+      content="Todos los archivos que se usan en el tutorial se encuentran aquí, entre otros."
+    />
+    <meta name="application-name" content="Archivos" />
+
+    <meta name="author" content="Azriel" />
+
+    <!-- Favicons -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/libdoc/img/favicon/favicon-32x32.png"
+    />
+
+    <meta name="msapplication-TileColor" content="#5bb4dd" />
+    <meta name="theme-color" content="#5bb4dd" />
+
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="msapplication-starturl" content="/pages/files.html" />
+    <meta name="msapplication-tooltip" content="Archivos" />
+    <meta name="msapplication-TileColor" content="#5bb4dd" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/pages/files.html" />
+    <meta property="og:title" content="Archivos" />
+    <meta
+      property="og:description"
+      content="Todos los archivos que se usan en el tutorial se encuentran aquí, entre otros."
+    />
+
+    <meta property="og:image" content="/assets/libdoc/img/libdoc.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Archivos" />
+    <meta
+      name="twitter:description"
+      content="Todos los archivos que se usan en el tutorial se encuentran aquí, entre otros."
+    />
+    <meta name="twitter:url" content="/pages/files.html" />
+
+    <meta name="twitter:image" content="/assets/libdoc/img/libdoc.png" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Archivos" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5bb4dd" />
+
+    <!-- Android -->
+    <meta name="theme-color" content="#5bb4dd" />
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="/assets/libdoc/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/libdoc/fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="/assets/libdoc/css/libdoc.css" />
+
+    <!-- Prism syntax highlighter -->
+
+    <link rel="stylesheet" href="/assets/libdoc/css/prism/prism-tomorrow.css" />
+
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        font-size: 0.9em;
+        line-height: 1.4em;
+        font-family: var(--sg-font-family-monospace);
+      }
+    </style>
+
+    <!-- Head scripts -->
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/jquery-3.5.1.slim.min.js"
+    ></script>
+
+    <!-- LibDoc config -->
+    <script>
+      window.site = {
+        title: "TyranoBuilder en Español",
+        description: "Guías, tutoriales y parche al español de TyranoBuilder.",
+        url: "",
+        baseurl: "",
+        playground: {
+          min_height: "300px",
+          stylesheets: [],
+          scripts_head: [],
+          scripts_body: [],
+        },
+      };
+    </script>
+  </head>
+
+  <body class="u-bc-primary-edge">
+    <div class="c-grid m-nowrap">
+      <div
+        class="c-position m-fixed m-top-left u-bc-primary-edge u-w-100 u-h-100 u-translucid u-z-100 m-anchor-top-right"
+        u-none="xl"
+        id="libdoc-sidebar-overlay"
+        onclick="sidebar();"
+      ></div>
+      <nav
+        class="c-position m-top-left u-z-100 u-h-100vh u-bc-primary-max u-bb-thin-dashed-alt m-anchor-top-right--sm m-anchor-top-right--md"
+        m-fw-medium="md,xl"
+        u-fixed="sm,md"
+        u-sticky="xl"
+        id="libdoc-sidebar"
+      >
+        <div
+          class="c-position m-absolute m-top-0 m-right-0 u-h-100 u-bl-thin-dashed-alt"
+          style="width: 1px"
+        ></div>
+        <button
+          class="c-btn c-position m-absolute m-top-right m-anchor-top-left u-z-12 u-p-sm"
+          u-none="xl"
+          onclick="sidebar()"
+        >
+          <span class="i-menu u-fs-md"></span>
+        </button>
+        <ul
+          id="libdoc-sidebar-menu"
+          class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl"
+        >
+          <li>
+            <a
+              rel="author"
+              href=""
+              class="c-btn m-translucid m-block-right u-p-md"
+            >
+              <img
+                src="/assets/libdoc/img/favicon/builder_logo.png"
+                style="max-height: 40px"
+                alt="TyranoBuilder en Español"
+              />
+            </a>
+          </li>
+
+          <li id="libdoc-sidebar-item-search">
+            <form
+              class="c-form"
+              action="/assets/libdoc/search.html"
+              method="get"
+            >
+              <input
+                type="search"
+                id="libdoc-search-box"
+                name="query"
+                class="u-bl-none u-bt-thin-dashed-alt u-br-none u-bb-none u-bg-search"
+                u-fs-xs="sm,md"
+                u-p-xs="sm,md"
+              />
+              <label for="libdoc-search-box" u-fs-xs="sm">Buscar</label>
+              <input type="submit" value="Search" class="u-none" />
+            </form>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Tutorial introductorio
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/starting.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Preparativos iniciales
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/scenario.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Creación de escenarios
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/character.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Creación de personajes
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/background.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Cambio de escena (fondo)
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/branching.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Ramificación del juego
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/playback.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Reproducción BGM
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/new_scenario.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Nuevo escenario
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/title_screen.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Pantalla de título
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/release.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Lanzamiento del juego
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Desarrollo
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/changelog.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Desarrollo"
+            >
+              <span class="i-clock u-mr-xxs"></span> Registro de cambios
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Descargas
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://mega.nz/folder/d5IlXLoZ#2fuuOACHoG1-I2xEIoxyLg"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Descargas"
+            >
+              <span class="i-download u-mr-xxs"></span> TB v2.04b Parche ES
+            </a>
+          </li>
+
+          <li
+            class="u-relative u-o-hidden libdoc-sidebar-item libdoc-sidebar-current-item"
+          >
+            <a
+              href="/pages/files.html"
+              class="c-btn m-translucid m-block-right u-br-large-solid u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Descargas"
+            >
+              <span class="i-file u-mr-xxs"></span> Directorio de archivos
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Fuentes oficiales
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://b.tyrano.jp/"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Fuentes oficiales"
+            >
+              TyranoBuilder JA
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://tyrano.jp/"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Fuentes oficiales"
+            >
+              TyranoScript JA
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="m-grow m-w-1 c-grid m-nowrap m-center">
+        <div
+          class="m-grow m-w-1 u-mw-main u-bc-primary-max u-b-thin-dashed-alt"
+        >
+          <header class="u-bb-thin-dashed-alt u-p-lg" u-p-sm="sm">
+            <h1 id="libdoc-page-title" class="u-mt-none u-mb-xs">Archivos</h1>
+            <p class="u-fs-lg u-m-none u-lh-base" u-fs-md="sm">
+              Todos los archivos que se usan en el tutorial se encuentran aquí,
+              entre otros.
+            </p>
+          </header>
+          <div id="libdoc-content" class="u-p-lg u-p-sm--sm">
+            <ul id="libdoc-assets" class="c-grid u-bl-thin-dashed-alt">
+              <li
+                class="m-w-12 c-form u-bt-thin-dashed-alt u-br-thin-dashed-alt u-bb-thin-dashed-alt"
+              >
+                <input
+                  type="search"
+                  id="libdoc-asset-search"
+                  class="u-b-none u-bg-search"
+                />
+                <label for="libdoc-asset-search">Búsqueda rápida</label>
+              </li>
+
+              <li
+                class="m-w-4 c-grid m-column m-space-between m-middle u-bb-thin-dashed-alt u-br-thin-dashed-alt u-p-md libdoc-asset"
+                m-nowrap="md,xl"
+                m-w-6="sm"
+                u-p-sm="sm"
+              >
+                <a
+                  href="/assets/resources/files/TB v2.04b Parche ES Win32.zip"
+                  title="Preview .zip"
+                  target="_blank"
+                  class="c-grid m-middle m-center m-grow u-p-none"
+                >
+                  <span class="i-zip u-fs-thumb"></span>
+                </a>
+                <nav class="u-m-none u-ta-center">
+                  <p
+                    class="c-text m-fs-xs m-ff-lead-strong u-mt-sm u-mb-sm u-c-primary-alt u-lh-base"
+                    m-fs-xxs="sm"
+                  >
+                    TB v2.04b Parche ES Win32.zip
+                  </p>
+                  <button
+                    class="c-btn m-translucid u-p-sm"
+                    title="Copy URL"
+                    onclick="copyToClipboard('/assets/resources/files/TB v2.04b Parche ES Win32.zip')"
+                  >
+                    <span class="i-copy u-mr-xs"></span>
+                  </button>
+                  <a
+                    href="/assets/resources/files/TB v2.04b Parche ES Win32.zip"
+                    class="c-btn u-p-sm"
+                    title="Download file"
+                    download
+                  >
+                    <span class="i-download"></span>
+                  </a>
+                </nav>
+              </li>
+
+              <li
+                class="m-w-4 c-grid m-column m-space-between m-middle u-bb-thin-dashed-alt u-br-thin-dashed-alt u-p-md libdoc-asset"
+                m-nowrap="md,xl"
+                m-w-6="sm"
+                u-p-sm="sm"
+              >
+                <a
+                  href="/assets/resources/files/mi_juego.zip"
+                  title="Preview .zip"
+                  target="_blank"
+                  class="c-grid m-middle m-center m-grow u-p-none"
+                >
+                  <span class="i-zip u-fs-thumb"></span>
+                </a>
+                <nav class="u-m-none u-ta-center">
+                  <p
+                    class="c-text m-fs-xs m-ff-lead-strong u-mt-sm u-mb-sm u-c-primary-alt u-lh-base"
+                    m-fs-xxs="sm"
+                  >
+                    mi_juego.zip
+                  </p>
+                  <button
+                    class="c-btn m-translucid u-p-sm"
+                    title="Copy URL"
+                    onclick="copyToClipboard('/assets/resources/files/mi_juego.zip')"
+                  >
+                    <span class="i-copy u-mr-xs"></span>
+                  </button>
+                  <a
+                    href="/assets/resources/files/mi_juego.zip"
+                    class="c-btn u-p-sm"
+                    title="Download file"
+                    download
+                  >
+                    <span class="i-download"></span>
+                  </a>
+                </nav>
+              </li>
+
+              <li
+                class="m-w-4 c-grid m-column m-space-between m-middle u-bb-thin-dashed-alt u-br-thin-dashed-alt u-p-md libdoc-asset"
+                m-nowrap="md,xl"
+                m-w-6="sm"
+                u-p-sm="sm"
+              >
+                <a
+                  href="/assets/resources/files/yuko.zip"
+                  title="Preview .zip"
+                  target="_blank"
+                  class="c-grid m-middle m-center m-grow u-p-none"
+                >
+                  <span class="i-zip u-fs-thumb"></span>
+                </a>
+                <nav class="u-m-none u-ta-center">
+                  <p
+                    class="c-text m-fs-xs m-ff-lead-strong u-mt-sm u-mb-sm u-c-primary-alt u-lh-base"
+                    m-fs-xxs="sm"
+                  >
+                    yuko.zip
+                  </p>
+                  <button
+                    class="c-btn m-translucid u-p-sm"
+                    title="Copy URL"
+                    onclick="copyToClipboard('/assets/resources/files/yuko.zip')"
+                  >
+                    <span class="i-copy u-mr-xs"></span>
+                  </button>
+                  <a
+                    href="/assets/resources/files/yuko.zip"
+                    class="c-btn u-p-sm"
+                    title="Download file"
+                    download
+                  >
+                    <span class="i-download"></span>
+                  </a>
+                </nav>
+              </li>
+            </ul>
+            <script
+              type="text/javascript"
+              src="/assets/libdoc/js/assets.js"
+            ></script>
+          </div>
+        </div>
+        <div
+          id="libdoc-toc-container"
+          class="m-fw-mini c-position m-top-right m-anchor-top-left u-bc-primary-edge u-z-10"
+          u-fixed="sm"
+          u-none="sm"
+        ></div>
+      </main>
+    </div>
+    <footer class="u-p-lg u-fs-sm u-c-primary-alt u-mt-md">
+      <nav class="c-grid m-space-between m-bottom">
+        <ul class="u-ls-none u-mb-md--sm">
+          <li>
+            <a href="" class="c-btn m-translucid u-pl-none"
+              >TyranoBuilder en Español</a
+            ><br />
+            Guías, tutoriales y parche al español de TyranoBuilder. © Azriel
+          </li>
+        </ul>
+
+        <ul class="u-ls-none">
+          <li class="u-fs-xxs">
+            Traducción y sitio web mantenido por:
+            <a
+              href="https://github.com/ChrisTVH"
+              class="u-c-primary-alt"
+              target="_blank"
+              >Azriel</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-core.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-markup.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-css.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-clike.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-javascript.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-markdown.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-scss.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-yaml.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/my-toggles.js"
+    ></script>
+    <script type="text/javascript" src="/assets/libdoc/js/template.js"></script>
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/playground.js"
+    ></script>
+
+    <aside
+      my-toggle-name="libdoc-modal"
+      class="c-position m-fixed m-top-left u-w-100 u-h-100 u-z-100"
+    >
+      <div
+        class="c-grid m-center m-middle m-position m-fixed m-top-left u-w-100 u-h-100"
+      >
+        <div
+          class="c-position m-fixed m-top-left u-w-100 u-h-100 u-cur-pointer u-bc-primary-alt u-faded"
+          my-toggle="libdoc-modal"
+        ></div>
+        <div
+          class="u-bc-primary-max u-brad-md u-relative u-b-thin-dashed-alt u-mh-100vh u-o-auto"
+        >
+          <header class="c-grid m-nowrap m-middle u-bb-thin-dashed-alt">
+            <h4 id="libdoc-modal-title" class="m-grow u-pl-sm">
+              Playground settings
+            </h4>
+            <nav>
+              <button
+                class="c-btn u-p-sm u-bl-thin-dashed-alt"
+                my-toggle="libdoc-modal"
+              >
+                Close <span class="i-x u-ml-xs"></span>
+              </button>
+            </nav>
+          </header>
+          <div
+            id="libdoc-modal-content"
+            class="u-p-lg"
+            u-pl-md="sm"
+            u-pr-md="sm"
+          >
+            content
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

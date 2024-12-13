@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html
+  lang="es"
+  dir="ltr"
+  itemscope
+  itemtype="https://schema.org/WebPage"
+  prefix="og:http://ogp.me/ns#"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- LibDoc metadata -->
+    <title>Pantalla de título</title>
+    <meta
+      name="description"
+      content="Aprender a editar tu pantalla de título es importante, después de todo es la presentación de tu juego."
+    />
+    <meta itemprop="name" content="Pantalla de título" />
+    <meta
+      name="description"
+      itemprop="description"
+      content="Aprender a editar tu pantalla de título es importante, después de todo es la presentación de tu juego."
+    />
+    <meta name="application-name" content="Pantalla de título" />
+
+    <meta name="author" content="Azriel" />
+
+    <!-- Favicons -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/libdoc/img/favicon/favicon-32x32.png"
+    />
+
+    <meta name="msapplication-TileColor" content="#5bb4dd" />
+    <meta name="theme-color" content="#5bb4dd" />
+
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="msapplication-starturl" content="/pages/title_screen.html" />
+    <meta name="msapplication-tooltip" content="Pantalla de título" />
+    <meta name="msapplication-TileColor" content="#5bb4dd" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/pages/title_screen.html" />
+    <meta property="og:title" content="Pantalla de título" />
+    <meta
+      property="og:description"
+      content="Aprender a editar tu pantalla de título es importante, después de todo es la presentación de tu juego."
+    />
+
+    <meta property="og:image" content="/assets/libdoc/img/libdoc.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pantalla de título" />
+    <meta
+      name="twitter:description"
+      content="Aprender a editar tu pantalla de título es importante, después de todo es la presentación de tu juego."
+    />
+    <meta name="twitter:url" content="/pages/title_screen.html" />
+
+    <meta name="twitter:image" content="/assets/libdoc/img/libdoc.png" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Pantalla de título" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5bb4dd" />
+
+    <!-- Android -->
+    <meta name="theme-color" content="#5bb4dd" />
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="/assets/libdoc/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/libdoc/fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="/assets/libdoc/css/libdoc.css" />
+
+    <!-- Prism syntax highlighter -->
+
+    <link rel="stylesheet" href="/assets/libdoc/css/prism/prism-tomorrow.css" />
+
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        font-size: 0.9em;
+        line-height: 1.4em;
+        font-family: var(--sg-font-family-monospace);
+      }
+    </style>
+
+    <!-- Head scripts -->
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/jquery-3.5.1.slim.min.js"
+    ></script>
+
+    <!-- LibDoc config -->
+    <script>
+      window.site = {
+        title: "TyranoBuilder en Español",
+        description: "Guías, tutoriales y parche al español de TyranoBuilder.",
+        url: "",
+        baseurl: "",
+        playground: {
+          min_height: "300px",
+          stylesheets: [],
+          scripts_head: [],
+          scripts_body: [],
+        },
+      };
+    </script>
+  </head>
+
+  <body class="u-bc-primary-edge">
+    <div class="c-grid m-nowrap">
+      <div
+        class="c-position m-fixed m-top-left u-bc-primary-edge u-w-100 u-h-100 u-translucid u-z-100 m-anchor-top-right"
+        u-none="xl"
+        id="libdoc-sidebar-overlay"
+        onclick="sidebar();"
+      ></div>
+      <nav
+        class="c-position m-top-left u-z-100 u-h-100vh u-bc-primary-max u-bb-thin-dashed-alt m-anchor-top-right--sm m-anchor-top-right--md"
+        m-fw-medium="md,xl"
+        u-fixed="sm,md"
+        u-sticky="xl"
+        id="libdoc-sidebar"
+      >
+        <div
+          class="c-position m-absolute m-top-0 m-right-0 u-h-100 u-bl-thin-dashed-alt"
+          style="width: 1px"
+        ></div>
+        <button
+          class="c-btn c-position m-absolute m-top-right m-anchor-top-left u-z-12 u-p-sm"
+          u-none="xl"
+          onclick="sidebar()"
+        >
+          <span class="i-menu u-fs-md"></span>
+        </button>
+        <ul
+          id="libdoc-sidebar-menu"
+          class="u-m-none u-p-none u-ls-none u-mh-100vh u-o-auto u-pb-xxl"
+        >
+          <li>
+            <a
+              rel="author"
+              href=""
+              class="c-btn m-translucid m-block-right u-p-md"
+            >
+              <img
+                src="/assets/libdoc/img/favicon/builder_logo.png"
+                style="max-height: 40px"
+                alt="TyranoBuilder en Español"
+              />
+            </a>
+          </li>
+
+          <li id="libdoc-sidebar-item-search">
+            <form
+              class="c-form"
+              action="/assets/libdoc/search.html"
+              method="get"
+            >
+              <input
+                type="search"
+                id="libdoc-search-box"
+                name="query"
+                class="u-bl-none u-bt-thin-dashed-alt u-br-none u-bb-none u-bg-search"
+                u-fs-xs="sm,md"
+                u-p-xs="sm,md"
+              />
+              <label for="libdoc-search-box" u-fs-xs="sm">Buscar</label>
+              <input type="submit" value="Search" class="u-none" />
+            </form>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Tutorial introductorio
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/starting.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Preparativos iniciales
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/scenario.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Creación de escenarios
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/character.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Creación de personajes
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/background.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Cambio de escena (fondo)
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/branching.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Ramificación del juego
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/playback.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Reproducción BGM
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/new_scenario.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Nuevo escenario
+            </a>
+          </li>
+
+          <li
+            class="u-relative u-o-hidden libdoc-sidebar-item libdoc-sidebar-current-item"
+          >
+            <a
+              href="/pages/title_screen.html"
+              class="c-btn m-translucid m-block-right u-br-large-solid u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Pantalla de título
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/release.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Tutorial introductorio"
+            >
+              Lanzamiento del juego
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Desarrollo
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/changelog.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Desarrollo"
+            >
+              <span class="i-clock u-mr-xxs"></span> Registro de cambios
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Descargas
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://mega.nz/folder/d5IlXLoZ#2fuuOACHoG1-I2xEIoxyLg"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Descargas"
+            >
+              <span class="i-download u-mr-xxs"></span> TB v2.04b Parche ES
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="/pages/files.html"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Descargas"
+            >
+              <span class="i-file u-mr-xxs"></span> Directorio de archivos
+            </a>
+          </li>
+
+          <li class="c-grid m-right u-bt-thin-dashed-alt u-mt-xs">
+            <div
+              class="u-p-xxs u-pr-sm u-pl-sm u-fs-xs u-bc-primary-edge u-lh-base u-bl-thin-dashed-alt u-bb-thin-dashed-alt c-text m-ff-monospace m-nowrap u-c-primary-alt"
+              u-fs-xxs="sm"
+            >
+              Fuentes oficiales
+            </div>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://b.tyrano.jp/"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Fuentes oficiales"
+            >
+              TyranoBuilder JA
+            </a>
+          </li>
+
+          <li class="u-relative u-o-hidden libdoc-sidebar-item">
+            <a
+              href="https://tyrano.jp/"
+              class="c-btn m-translucid m-block-right m-ff-lead u-ta-right"
+              u-fs-xs="sm,md"
+              u-p-xs="sm,md"
+              data-iframe-mode=""
+              data-category="Fuentes oficiales"
+            >
+              TyranoScript JA
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="m-grow m-w-1 c-grid m-nowrap m-center">
+        <div
+          class="m-grow m-w-1 u-mw-main u-bc-primary-max u-b-thin-dashed-alt"
+        >
+          <header class="u-bb-thin-dashed-alt u-p-lg" u-p-sm="sm">
+            <h1 id="libdoc-page-title" class="u-mt-none u-mb-xs">
+              Pantalla de título
+            </h1>
+            <p class="u-fs-lg u-m-none u-lh-base" u-fs-md="sm">
+              Aprender a editar tu pantalla de título es importante, después de
+              todo es la presentación de tu juego.
+            </p>
+          </header>
+          <div id="libdoc-content" class="u-p-lg u-p-sm--sm">
+            <ul id="markdown-toc">
+              <li>
+                <a
+                  href="#crea-una-pantalla-de-título"
+                  id="markdown-toc-crea-una-pantalla-de-título"
+                  >Crea una pantalla de título</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#uso-de-botón-de-imagen"
+                  id="markdown-toc-uso-de-botón-de-imagen"
+                  >Uso de botón de imagen</a
+                >
+              </li>
+            </ul>
+
+            <h2 id="crea-una-pantalla-de-título">
+              Crea una pantalla de título
+            </h2>
+
+            <p>
+              La pantalla de título es como la cara del juego, así que hay que
+              tenerla muy en cuenta.<br />
+              TyranoBuilder te permite personalizar la pantalla de título a tu
+              gusto.
+            </p>
+
+            <p>
+              Hasta ahora, hemos estado utilizando la pantalla de título por
+              defecto.<br />
+              Ahora, vamos a editar la pantalla de título.
+            </p>
+
+            <p>
+              Abre la pestaña de escenarios en la área izquierda y haz doble
+              clic en «title_screen» para cargarlo.
+            </p>
+
+            <p>
+              <img
+                src="/assets/resources/images/title_screen-0.png"
+                alt="title_screen"
+              />
+            </p>
+
+            <p>
+              Mira el archivo de escenario en el título. No es diferente de los
+              archivos de escenario anteriores.<br />
+              También puedes leer el significado del archivo de escenario.
+            </p>
+
+            <p>
+              Sí. La pantalla de título dice que este archivo de escenario se
+              cargará primero cuando se inicie el juego, pero el proceso de
+              creación no difiere de los archivos de escenario anteriores.
+            </p>
+
+            <p>
+              De este modo, conseguirás un alto nivel de presentación y una
+              pantalla de título muy flexible.
+            </p>
+
+            <p>
+              Hasta este punto, si ya has avanzado en el tutorial, ya puedes
+              cambiar la pantalla de título a tu gusto.
+            </p>
+
+            <p>
+              Puedes cambiar los botones ‘Nuevo juego’ y ‘Cargar Juego’, cambiar
+              la imagen de fondo y editarla a tu gusto.
+            </p>
+
+            <h2 id="uso-de-botón-de-imagen">Uso de botón de imagen</h2>
+
+            <p>
+              Los botones que aparecen en la pantalla de título son un poco,
+              bueno, sencillos. Si quieres personalizarlos un poco más, prueba a
+              utilizar el «Botón de imagen».
+            </p>
+
+            <p>
+              Arrastre y suelte el «Botón de imagen» del área izquierda para
+              añadirlo.
+            </p>
+
+            <p>
+              La funcionalidad es la misma que el «Botón de rutas» que hemos
+              utilizado hasta ahora, pero puede aplicar la imagen que desee.
+            </p>
+
+            <p>
+              En este caso, nos gustaría utilizar el siguiente bóton en blanco
+              puede editarlo como quiera para ponerle ‘Nuevo juego’ o ‘Cargar
+              Juego’.
+            </p>
+
+            <p>
+              <img
+                src="/assets/resources/images/button_title.png"
+                alt="title_screen"
+              />
+            </p>
+
+            <p>
+              <img
+                src="/assets/resources/images/title_screen-1.png"
+                alt="title_screen"
+              />
+            </p>
+
+            <p>
+              ¿Cómo era?<br />
+              Por supuesto, también puedes poner música en el título, o mostrar
+              una advertencia o un logotipo antes de que empiece el juego.
+            </p>
+
+            <p>
+              Ahora, en la próxima página, vamos a prepararnos por fin para
+              lanzar tu juego.
+            </p>
+
+            <p>
+              <a href="/pages/release.html"
+                >Siguiente: »» ¡Juego finalizado! Listos para su publicación</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          id="libdoc-toc-container"
+          class="m-fw-mini c-position m-top-right m-anchor-top-left u-bc-primary-edge u-z-10"
+          u-fixed="sm"
+          u-none="sm"
+        ></div>
+      </main>
+    </div>
+    <footer class="u-p-lg u-fs-sm u-c-primary-alt u-mt-md">
+      <nav class="c-grid m-space-between m-bottom">
+        <ul class="u-ls-none u-mb-md--sm">
+          <li>
+            <a href="" class="c-btn m-translucid u-pl-none"
+              >TyranoBuilder en Español</a
+            ><br />
+            Guías, tutoriales y parche al español de TyranoBuilder. © Azriel
+          </li>
+        </ul>
+
+        <ul class="u-ls-none">
+          <li class="u-fs-xxs">
+            Traducción y sitio web mantenido por:
+            <a
+              href="https://github.com/ChrisTVH"
+              class="u-c-primary-alt"
+              target="_blank"
+              >Azriel</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-core.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-markup.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-css.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-clike.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-javascript.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-markdown.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-scss.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/prism/prism-yaml.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/my-toggles.js"
+    ></script>
+    <script type="text/javascript" src="/assets/libdoc/js/template.js"></script>
+    <script
+      type="text/javascript"
+      src="/assets/libdoc/js/playground.js"
+    ></script>
+
+    <aside
+      my-toggle-name="libdoc-modal"
+      class="c-position m-fixed m-top-left u-w-100 u-h-100 u-z-100"
+    >
+      <div
+        class="c-grid m-center m-middle m-position m-fixed m-top-left u-w-100 u-h-100"
+      >
+        <div
+          class="c-position m-fixed m-top-left u-w-100 u-h-100 u-cur-pointer u-bc-primary-alt u-faded"
+          my-toggle="libdoc-modal"
+        ></div>
+        <div
+          class="u-bc-primary-max u-brad-md u-relative u-b-thin-dashed-alt u-mh-100vh u-o-auto"
+        >
+          <header class="c-grid m-nowrap m-middle u-bb-thin-dashed-alt">
+            <h4 id="libdoc-modal-title" class="m-grow u-pl-sm">
+              Playground settings
+            </h4>
+            <nav>
+              <button
+                class="c-btn u-p-sm u-bl-thin-dashed-alt"
+                my-toggle="libdoc-modal"
+              >
+                Close <span class="i-x u-ml-xs"></span>
+              </button>
+            </nav>
+          </header>
+          <div
+            id="libdoc-modal-content"
+            class="u-p-lg"
+            u-pl-md="sm"
+            u-pr-md="sm"
+          >
+            content
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>
